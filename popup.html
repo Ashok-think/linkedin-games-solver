@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <style>
+    body { width: 300px; padding: 15px; font-family: sans-serif; }
+    .game-group { margin-bottom: 20px; padding: 10px; border: 1px solid #ccc; border-radius: 6px; display: none; }
+    .game-title { font-size: 16px; font-weight: bold; margin-bottom: 10px; color: #333; }
+    .action-button { 
+      width: 100%; padding: 8px; margin-bottom: 5px; color: white; border: none; cursor: pointer; font-weight: bold; border-radius: 4px; text-align: left;
+    }
+    .full-solve { background: #d93025; } 
+    .step-solve { background: #0a66c2; } 
+    .title { text-align: center; font-weight: bold; margin-bottom: 15px; color: #333; }
+    #status-message { text-align: center; font-style: italic; color: #666; } 
+  </style>
+</head>
+<body>
+  <div class="title">LinkedIn Solver Menu</div>
+  <div id="status-message">Detecting game...</div>
+
+  <div class="game-group" id="group-queens">
+    <div class="game-title">👑 Queens</div>
+    <button id="solve_queens_step" class="action-button step-solve">Help with One Move</button>
+    <button id="solve_queens_full" class="action-button full-solve">Solve the puzzle</button>
+  </div>
+
+  <div class="game-group" id="group-tango">
+    <div class="game-title">☀️ Tango</div>
+    <button id="solve_tango_step" class="action-button step-solve">Help with One Move</button>
+    <button id="solve_tango_full" class="action-button full-solve">Solve the puzzle</button>
+  </div>
+
+  <div class="game-group" id="group-sudoku">
+    <div class="game-title">🔢 Mini Sudoku</div>
+    <button id="solve_sudoku_step" class="action-button step-solve">Help with One Move</button>
+    <button id="solve_sudoku_full" class="action-button full-solve">Solve the puzzle</button>
+  </div>
+
+  <div class="game-group" id="group-zip">
+    <div class="game-title">Zip</div>
+    <button id="solve_zip_step" class="action-button step-solve">Help with One Move</button>
+    <button id="solve_zip_full" class="action-button full-solve">Solve the puzzle</button>
+  </div>
+
+  <div class="game-group" id="group-pinpoint">
+    <div class="game-title">Pinpoint</div>
+    <button id="solve_pinpoint_step" class="action-button step-solve">Help with One Move</button>
+    <button id="solve_pinpoint_full" class="action-button full-solve">Solve the puzzle</button>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
